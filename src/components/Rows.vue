@@ -14,15 +14,15 @@
 
 <script> 
 export default {
-    props: ['movieBase', 'API_KEY', 'baseUrl', 'imgUrl', 'genre'],
+    props:['movieBase', 'API_KEY', 'baseUrl', 'imgUrl', 'genre'],
     data(){ 
         return {
-            movieList : '',
-            itemTitle: '',
-            show: false
+            movieList :'',
+            itemTitle:'',
+            show:false
         }
     }, 
-    methods: {
+    methods:{
         toggleShow(){
             this.show = !this.show
         fetch(this.movieBase)
@@ -41,46 +41,46 @@ export default {
 
 <style>
 .row-wrapper{
-    padding: 5px 0;
-    background: rgba(12, 11, 24, 0.411);
+    padding:5px 0;
+    background:rgba(12, 11, 24, 0.411);
 }
 .row-wrapper p{
-    text-align: left;
-    font-size: 25px;
-    font-weight: 600;
-    padding: 20px 30px;
+    text-align:left;
+    font-size:25px;
+    font-weight:600;
+    padding:20px 30px;
 }
 .row-wrapper button{
-    border: none;
-    background: none;
-    color: whitesmoke;
-    cursor: pointer;
+    border:none;
+    background:none;
+    color:whitesmoke;
+    cursor:pointer;
 }
 .row{
-    white-space: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    white-space:nowrap;
+    overflow-x:scroll;
+    overflow-y:hidden;
     
 } 
 ::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+    width:0;  /* Remove scrollbar space */
+    background:transparent;  /* Optional:just make scrollbar invisible */
 }
 li{
-    display: inline-block;
-    padding: 5px 10px;
-    position: relative;
+    display:inline-block;
+    padding:5px 10px;
+    position:relative;
 }
 li img{
-    height: 200px;
-    border-radius: 20px;
+    height:200px;
+    border-radius:20px;
 }
 li p{
-    position: absolute;
-    top: 70%;
-    padding: 10px 20px;
-    font-size: 15px;
+    position:absolute;
+    top:70%;
+    padding:10px 20px;
+    font-size:15px;
     font-weight:500;
-    z-index: 100;
+    z-index:100;
 }
 </style> 

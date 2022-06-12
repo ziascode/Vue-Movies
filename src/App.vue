@@ -22,19 +22,19 @@ import Rows from './components/Rows.vue'
 import Request from './components/Request.vue'
 
 export default {          
-  name: 'App', 
-  components: { Display, Rows, Request},
+  name:'App', 
+  components:{ Display, Rows, Request},
   data(){
     return { 
-      baseUrl: 'https://api.themoviedb.org/3',
-      imgUrl: 'https://image.tmdb.org/t/p/original',
-      API_KEY: '6e291f4f26c7459d67c95b1f2798dc9b',
-      displayMovie: '',
-      title : '',
-      poster: '',
-      desc: '',
-      genre: ['Top Rated', 'Action Movies', 'Netflix Originals', 'Comedies'], 
-      category: [1,2,3,4]
+      baseUrl:'https://api.themoviedb.org/3',
+      imgUrl:'https://image.tmdb.org/t/p/original',
+      API_KEY:'6e291f4f26c7459d67c95b1f2798dc9b',
+      displayMovie:'',
+      title :'',
+      poster:'',
+      desc:'',
+      genre:['Top Rated', 'Action Movies', 'Netflix Originals', 'Comedies'], 
+      category:[1,2,3,4]
     
     }
   },
@@ -66,42 +66,42 @@ export default {
 
 <style>
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 body{
-  background: rgba(12, 11, 24, 0.993);
+  background:rgba(12, 11, 24, 0.993);
   
 }
 .app{
-  color: aliceblue;
+  color:aliceblue;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .app span{
-  color: rgb(56, 146, 78);
+  color:rgb(56, 146, 78);
 }
 .app h1{
-  display: flex;
-  justify-content: center;
-  margin: 20px auto;
+  display:flex;
+  justify-content:center;
+  margin:20px auto;
 }
 .nav {
-  padding: 15px 10px;
-  background: rgba(29, 26, 26, 0);
-  display: flex;
+  padding:15px 10px;
+  background:rgba(29, 26, 26, 0);
+  display:flex;
   justify-content:start;
   width:15%;
 }
 .nav img{
-  width: 100px;
+  width:100px;
 }
 .nav .icon{
-  width: 50px;
+  width:50px;
 }
 .nav h1{
-  background-image: linear-gradient(60deg, #174374, #1cb5ab, #2dbe70);
-  background-clip: text;
-  color: transparent;
+  background-image:linear-gradient(60deg, #174374, #1cb5ab, #2dbe70);
+  background-clip:text;
+  color:transparent;
 }
 </style>

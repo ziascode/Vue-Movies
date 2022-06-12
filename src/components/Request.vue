@@ -18,16 +18,16 @@
 
 <script>
 export default {
-    props: ['API_KEY', 'imgUrl'],
+    props:['API_KEY', 'imgUrl'],
     data(){
         return{
-            searchUrl: 'https://api.themoviedb.org/3/search/movie?api_key=###&query=the+avengers',
-            query: '',
-            movieResult: '',
-            submit: false
+            searchUrl:'https://api.themoviedb.org/3/search/movie?api_key=###&query=the+avengers',
+            query:'',
+            movieResult:'',
+            submit:false
         }
     },
-    methods: {
+    methods:{
         searchMovie(e){
             
             if(e.key == 'Enter'){
@@ -48,38 +48,38 @@ export default {
 <style>
 
 .search{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 .list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
     
 }
 .search-box{
-    display: flex;
-    flex-wrap: wrap;
+    display:flex;
+    flex-wrap:wrap;
 }
 .search-box input{
-    padding: 10px 10px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
+    padding:10px 10px;
+    border-radius:10px;
+    outline:none;
+    border:none;
 }
 .search-box button{
-    padding: 10px 10px;
-    width: 70px;
-    margin: 0 0 0 10px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    background: rgb(64, 131, 207);
-    cursor: pointer;
+    padding:10px 10px;
+    width:70px;
+    margin:0 0 0 10px;
+    border-radius:10px;
+    outline:none;
+    border:none;
+    background:rgb(64, 131, 207);
+    cursor:pointer;
 }
-.search-box button: :hover{
+.search-box button::hover{
     
 }
 </style>
